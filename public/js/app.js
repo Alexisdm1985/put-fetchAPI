@@ -10,7 +10,6 @@ function submitHandler(){
     const url = 'http://localhost:3000/api/users'
     const dataObject = {}
 
-    // set the dataObject with formdata values
     for (const [key, value] of formData.entries()){
       dataObject[key] = value;
     };

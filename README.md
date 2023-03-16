@@ -1,6 +1,6 @@
 # Client-server comunication with fetch api
 
-This is a excercise that send data from a form to the server with express, and print de responsoe on the client console
+This is a excercise that send data from a form to the server with express, and print de response on the client console
 
 ***
 

@@ -1,9 +1,12 @@
-const express = require('express')
+const express = require('express');
 const app = express()
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+const path = require('path');
+const notFound = require('./src/middlewares/notFound');
+
 
 // middleware
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 // routes
@@ -16,5 +19,6 @@ app.put("/api/users", (req, res) => {
     res.json({msg: 'Desde server'});
 });
 
+app.use(notFound);
 
-app.listen(port, () => console.log(port));
+app.listen(PORT, () => console.log(PORT));
