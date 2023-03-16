@@ -17,7 +17,7 @@ This is a excercise that send data from a form to the server with express, and p
 
 - Install the dependencies and devDependencies and start the server.
 
-    ```
+    ```sh
     // Install node modules
     $ npm install
     //Run the server at localhost:3000
@@ -60,7 +60,7 @@ app.listen(port, () => console.log(port));
 
 ### app.js
 
-```
+```sh
 const form = document.getElementById('update-form');
 
 function submitHandler(){
